@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Kamruzzaman Sohel - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Left Sidebar */
+        .sidebar {
+            width: 280px;
+            background-color: #2c3e50;
+            color: #fff;
+            position: fixed;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+            box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #1abc9c;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
+
+        .contact-info {
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #bdc3c7;
+            line-height: 1.6;
+        }
+
+        .nav-links {
+            list-style: none;
+            width: 100%;
+        }
+
+        .nav-links li {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .nav-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 15px;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            background-color: #1abc9c;
+            color: #fff;
+            padding-left: 20px;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            margin-left: 280px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+        }
+
+        section {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        section p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .skills-list, .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag, .service-tag {
+            background: #e0f2f1;
+            color: #00796b;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Footer Form Section */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: auto;
+        }
+
+        footer h2 {
+            color: #1abc9c;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #1abc9c;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .send-btn {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .send-btn:hover {
+            background-color: #16a085;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Left Side Navigation & Info -->
+    <div class="sidebar">
+        <!-- Left side Image -->
+        <img src="C:\Users\User\Downloads\sohel.png" alt="Md. Kamruzzaman Sohel" class="profile-img">
+        <h2>Md. Kamruzzaman Sohel</h2>
+        
+        <div class="contact-info">
+            <p><strong>Phone:</strong> +880 1569199662, 01672754300 (WhatsApp)</p>
+            <p><strong>Address:</strong> Dattapara Hansan Lane, Tongi, Gazipur-1711, Bangladesh</p>
+            <p><strong>Email:</strong> mksohel08@gmail.com</p>
+        </div>
+
+        <!-- Left side Navigation -->
+        <ul class="nav-links">
+            <li><a href="#about" class="active">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#service">Service Type</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Middle Portion (Body Description) -->
+    <div class="main-content">
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am <b>Md. Kamruzzaman Sohel</b>, a results-driven <b>SEO & Digital Growth Specialist</b> and web technologist with a deep passion for scaling digital footprints and maximizing online visibility.
+
+With a unique blend of technical expertise in <b> HTML, CSS, and JavaScript </b> and advanced mastery in search engine optimization, I bridge the gap between development and data-driven marketing. My approach ensures that websites not only look exceptional and function seamlessly but are also structurally optimized to dominate search engine results.<br> <b><u>
+
+Core Expertise & Competencies:</u></b> </br> <br> <b>
+Search & Growth:</b> Advanced SEO Strategy, Technical SEO, On-Page SEO, Keyword Research, and Competitor Analysis.<br> <b>
+
+Next-Gen Search & Optimization:</b> Answer Engine Optimization (AEO), Generative Engine Optimization (GEO), and Google Business Profile (GBP) Optimization.
+
+<br> <b>Authority Building:</b> Link Building & Digital PR campaigns to secure high-value brand mentions and backlinks.<br> <b>
+
+Content & Conversion:</b> Content Optimization, Conversion Rate Optimization (CRO), and comprehensive Website Audits.<br> <b>
+
+Analytics & AI Tools:</b> Google Analytics 4 (GA4) data interpretation alongside hands-on proficiency with cutting-edge AI ecosystems including ChatGPT, Claude, and Gemini.
+
+<br> <b>Industry Tools:</b> Expert utilization of professional suites like Ahrefs and Semrush.<br>
+
+Whether its auditing a complex technical architecture, executing a high-impact digital PR strategy, or optimizing user journeys for peak conversion, I am dedicated to turning data into actionable insights and driving sustainable, measurable growth.</br> </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Web Content Writing</span>
+                <span class="skill-tag">Digital Marketing</span>
+                <span class="skill-tag">SEO Optimization</span>
+                <span class="skill-tag">AEO & GEO </span>
+            </div>
+        </section>
+
+        <section id="service">
+            <h2>Service Type</h2>
+<p><br><b>1. Comprehensive SEO Strategy & Website Audits</b>
+	<br><b>What Service I Provide: </b> A complete evaluation of a client's website performance, technical health, and search visibility, resulting in a step-by-step roadmap for sustainable growth.
+	<br><b>How It Is Done: </b>
+	<br>Use <b>Ahrefs or Semrush</b> to conduct deep-dive audits uncovering backlink health, broken links, and critical technical bottlenecks (such as crawl errors and slow page speeds).
+	<br>Analyze user behavior, traffic drops, and conversion flows through Google Analytics <b> (GA4) </b>.
+	<br>Deliver a prioritized, actionable strategy report designed to systematically improve rankings and organic visibility.
+<br><b>2. Keyword Research & Search Intent Mapping</b>
+	<br><b>What Service I Provide: </b> Uncovering high-converting, profitable, and low-competition keywords while matching content with what your target audience is actually searching for.
+	<br><b>How It Is Done: </b>
+	<br>Leverage <b>Semrush</b> and <b>Ahrefs Keyword Explorer</b> to target high-value search terms specific to the client's niche.
+	<br>Map keywords to the correct <b>search intent</b> (informational, transactional, or navigational) to ensure content directly addresses user needs and drives qualified traffic.
+<br><b>3. Technical SEO, AEO (Answer Engine Optimization) & GEO (Generative Engine Optimization) </b>
+	<br><b>What Service I Provide: </b> Optimizing website architecture so it performs exceptionally well not only on traditional search engines like Google, but also on next-generation AI platforms (ChatGPT Search, Gemini, Perplexity).
+	<br><b>How It Is Done: </b>
+	<br>Utilize foundational <b>HTML/CSS</b> knowledge to fix site structure, mobile responsiveness, page speed, and implement precise JSON-LD schema markup.
+	<br>Structure content with direct answers, FAQ schemas, and natural language optimization to increase the likelihood of being cited by AI answer engines.
+<br><b>4. On-Page SEO & Content Optimization</b>
+	<br><b>What Service I Provide: </b> Fine-tuning existing web pages and blog posts to climb search engine result pages (SERPs) and capture higher click-through rates.
+	<br><b>How It Is Done: </b>
+	<br>Optimize core on-page elements including title tags, meta descriptions, hierarchical headings (H1–H3), image alt texts, and internal linking structures.
+	<br>Use advanced AI prompting with <b>ChatGPT, Claude, and Gemini</b> to enrich content depth, improve readability, and seamlessly integrate LSI keywords.
+<br><b>5. High-Authority Link Building & Digital PR</b>
+	<br><b>What Service I Provide: </b>Securing high-quality backlinks and authoritative brand mentions to boost domain authority (DA) and build long-term brand trust.
+	<br><b>How It Is Done: </b>
+	<br>Analyze competitor backlink profiles via <b>Ahrefs</b> to discover high-value link gaps and proven acquisition channels (e.g., guest posting, broken link building).
+	<br>Craft compelling, data-driven pitches and press releases for outreach to niche-relevant journalists, editors, and industry bloggers.
+<br><b>6. Conversion Rate Optimization (CRO) </b>
+	<br><b>What Service I Provide: </b> Transforming existing website traffic into paying customers, subscribers, or quality leads by refining user journeys and removing friction points.
+	<br><b>How It Is Done: </b>
+	<br>Identify drop-off points and high-exit pages using <b>GA4</b> behavioral data.
+	<br>Enhance landing page design, tweak layout structures using <b>HTML/CSS, </b>optimize Call-to-Action (CTA) placements, and improve persuasive copywriting.
+<br><b>7. Competitor Analysis</b>
+	<br><b>What Service I Provide: </b>Uncovering rival market strategies, finding content gaps, and identifying weaknesses to give your clients a distinct competitive advantage.
+	<br><b>How It Is Done: </b>
+	<br>Track competitors' top-performing traffic drivers and ranking keywords using <b>Semrush. </b>
+	<br>Study competitor content and link acquisition strategies to build a superior, counter-offensive roadmap for your client.
+<br><b>8. Google Business Profile (GBP) Optimization</b>
+	<br><b>What Service I Provide: </b>Maximizing local search visibility and Google Maps rankings to drive foot traffic, local inquiries, and store visits for local businesses.
+	<br><b>How It Is Done: </b>
+	<br>Claim, verify, and meticulously optimize business categories, descriptions, operating hours, and location details.
+	<br>Implement automated review generation strategies, publish regular GBP updates, and upload geo-tagged media to capture top positions in the local pack.
+</p>
+
+            
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><br> <b>Bachelor of Business Administration (BBA - Hons.)</b>
+<br> <b>Institution:</b> Asian University of Bangladesh
+<br> <b>Period:</b> 1997 to 2002
+<br> <b>Diploma in Homeopathic Medicine & Surgery (DHMS)</b>
+<br> <b>Institution:</b> Homeopathic Medical College & Hospital
+<br> <b>Period:</b> 2012 to 2017
+<br> <b>Professional Training & Certifications</b>
+<br> <b>Digital Marketing & SEO</b>
+<br>Dreamland IT Institute
+<br>Skyline IT Institute
+<br> <b>Language Courses (English & Spanish)</b>
+<br>Global Language and Career
+</p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><br> <b>Manager (Tender Data Processing)</b>
+<br> <b>Company: </b> Alltender.com (Asteroid Systems Ltd)
+<br> <b>Overview: </b> Managed tender data processing operations, ensured data accuracy, and oversaw team workflows to streamline tender information management.
+<br> <b>Verification Representative)</b>
+<br> <b>Company: </b> Radiant Data Systems Ltd
+<br> <b>Overview: </b> Handled data verification tasks, verified information authenticity, and maintained data integrity standards for organizational databases.
+<br> <b>Data Entry Operator</b>
+<br> <b>Company: </b>  Golden Harvest Infotech Ltd
+<br> <b>Overview: </b>  Managed large-scale data entry operations with high accuracy and efficiency, ensuring seamless handling of business documents and digital records.
+<br> <b>Career Transition & Current Availability</b>
+<br> <b>Digital Growth & SEO Practitioner</b>
+<br> <b>Overview: </b>  Transitioned into advanced digital marketing and search engine optimization. Equipped with strong technical expertise in Search Intent, Technical SEO, AEO/GEO, Link Building, Content Optimization, and GA4 analytics alongside practical skills in HTML, CSS, and JavaScript. Ready to tackle modern digital marketing challenges.
+<br> <b>Work Availability: </b>
+<br>Available for <b> Onsite, Hybrid, </b>  and <b> Remote (Worldwide) </b>  opportunities.
+</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Details</h2>
+            <p><br><b>Address:</b>Dattapara, Tongi, Gazipur-1711, Bangladesh.
+<br><b>Phone:</b> +880 1569199662, +880 1672754300 (WhatsApp).
+<br><b>Email:</b> mksohel08@gmail.com
+</p>
+        </section>
+
+        <!-- Footer with Contact Form -->
+        <footer id="footer-form">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="queries">Your Queries:</label>
+                    <textarea id="queries" required placeholder="Write your message here..."></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send</button>
+            </form>
+        </footer>
+
+    </div>
+
+    <!-- JavaScript to handle Email Sending via Mailto -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const queries = document.getElementById('queries').value;
+            
+            const recipientEmail = "mksohel08@gmail.com";
+            const subject = encodeURIComponent("New Query from Portfolio - " + name);
+            const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nQuery:\n" + queries);
+            
+            // Opens the user's default email client pre-filled with the message content
+            window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+        });
+    </script>
+</body>
+</html>
